@@ -7,9 +7,10 @@ int main(){
     for (int i = 1; i <=given_num; i++)
     {
         factorial = factorial * i;
+        printf("%d ", factorial);
     }
 
-    printf("Factorial is = %d", factorial);
+    printf("\nFactorial is = %d", factorial);
 
     return 0;
 }
