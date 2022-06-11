@@ -1,42 +1,41 @@
 #include<stdio.h>
+
 int main(){
-    int test_case,max,max_test;
-    scanf("%d", &test_case);
-    int count[10] = {0};
-    int arr[test_case];
+    int num_of_test;
+    scanf("%d", &num_of_test);
 
-    for (int i = 0; i < test_case; i++)
+    for (int k = 0; k < num_of_test; k++)
+   
     {
-        scanf("%d", &arr[i]);
-        count[arr[i]]++;
-       
-    }
-
-    max = count[0];
-    for (int i = 1; i <= test_case; i++)
-    {
-        if (max<count[i])
+        int max = -1;
+        int arr_size;
+        scanf("%d", &arr_size);
+        int arr[arr_size];
+        int countAr[200001] = {0};
+        
+        for (int i = 0; i < arr_size; i++)
         {
-            max_test = i;
-            max = count[i];
+            scanf("%d", &arr[i]);
+            countAr[arr[i]]++;
 
-            
-        }
-        if(max==count[i]){
-            max_test = i;
         }
         
+        for (int i = 0; i < arr_size; i++)
+        {
+            
+            if (countAr[arr[i]]>=3)
+            {
+                max = arr[i];
+            } 
+    
+        }
+        
+       
+        
+        printf(" %d", max);
     }
     
-    
-  
-         if (max>=3)
-    {
-        printf("%d", max_test);
-    }else{
-        printf("%d", -1);
-    }
-    
+
 
     return 0;
 }

@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*html": "html",
+    "ctype.h": "c"
+  }
+}
