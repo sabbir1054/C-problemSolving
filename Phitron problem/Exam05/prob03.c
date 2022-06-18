@@ -7,6 +7,7 @@ void makeStrCopy(char in[], char out[]){
     {
         out[i] = in[i];
     }
+
     out[i] = '\0';
 }
 
