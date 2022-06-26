@@ -1,3 +1,10 @@
+/* 
+Problem No :02
+Problem : Write a program in C to display the n terms of odd natural number and their sum
+Student ID : 221-35-845
+Student Name: Md Sabbir Hossain
+ */
+
 #include<stdio.h>
 int main(){
     int n,sum=0;

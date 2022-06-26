@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "*html": "html",
-    "ctype.h": "c"
+    "ctype.h": "c",
+    "stdio.h": "c"
   }
 }

@@ -1,3 +1,11 @@
+/* 
+Problem No :06
+Problem : Write a C program to calculate sum of digits of a number
+Student ID : 221-35-845
+Student Name: Md Sabbir Hossain
+ */
+
+
 #include<stdio.h>
 int main(){
     int num, sum=0;
