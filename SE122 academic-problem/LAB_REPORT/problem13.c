@@ -9,15 +9,17 @@ int main()
     
     printf("Enter %d elements\n", n);
     
-    for ( c = 0 ; c < n ; c++ )
-    scanf("%d", &array[c]);
+    for ( c = 0 ; c < n ; c++ ){
+        scanf("%d", &array[c]);
+    }
+    
     
     printf("Enter the location where you wish to delete element\n");
     scanf("%d", &position);
     
-    if ( position >= n+1 )    
+    if ( position >= n+1 ) {
     printf("Deletion not possible.\n");
-    
+}
     else
     {    
         for ( c = position - 1 ; c < n - 1 ; c++ ) 
